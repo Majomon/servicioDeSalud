@@ -10,10 +10,11 @@
     height: 100vh;
 }
 /* Header */
-.header{
+.header, footer {
     width: 100%;
     height: 3rem;
-    background-color: rgb(109, 214, 39);
+    color: white;
+    background-color: #07004F;
     padding: 0.5rem 1rem;
 }
 
@@ -24,6 +25,7 @@
     width: 100%;
     height: 100%;
     margin: 0 auto;
+    color: white;
 }
 
 .cajaLogoYTitulo{
@@ -47,10 +49,18 @@
     list-style-type: none;
     padding: 0 0 0 5rem;
     margin: 0 auto;
+    color: white;
 }
 .ulNav li a{
     text-decoration: none;
-    color: black;
+    color: white;
+    border-radius: 5px;
+    transition: .5s;
+}
+.ulNav li a:hover {
+    padding: .5rem;
+    color: #07004F;
+    background-color: #B7D0FF;
 }
 
 .mainInicio{

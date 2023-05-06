@@ -1,0 +1,55 @@
+* { padding: 0; margin: 0; box-sizing: border-box;}
+
+/* FORMATO DE PLANES */
+main {
+   display: inline-flex;
+}
+.plan-container {
+    display: flex;
+    flex-wrap: wrap;
+    width:70%;
+    max-width: 1170px;
+    margin: 2rem;
+    overflow: hidden;
+    border-radius: 50px;
+}
+img {width: 100%;}
+
+.plan-individual {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    transition: 1s;
+}
+.plan-individual:hover {
+    transform: scale(1.1);
+}
+.imagen-plan {
+    width: 100%;
+}
+
+.pjoven {background-color: #100493;}
+.pfamily {background-color: #0140B3;}
+.pmature {background-color: #2D5EBA;}
+.pcuidado {background-color: #4273CE;}
+
+.titulo-plan,
+.descripcion-plan {
+    position: relative;
+    text-align: center;
+    color: whitesmoke;
+    font-size: large;
+    font-weight: bold;
+}
+
+/* FORMATO DE CAMPAÑAS ASIDE */
+
+.campanhas-container {
+    width: 20%;
+    float: right;
+    margin: 2rem;
+}
+.campanha {
+    margin: 0 0 2rem 0;
+
+}
