@@ -10,7 +10,7 @@
     height: 100vh;
 }
 /* Header */
-.header, footer {
+.header {
     width: 100%;
     height: 3rem;
     color: white;
@@ -32,6 +32,7 @@
     width: 30%;
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 .logoNav{
@@ -39,15 +40,15 @@
 }
 .h1Inicio{
     font-size: 20px;
+    margin: auto;
 }
 
 .ulNav{
-    width: 60%;
+    width: 70%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     list-style-type: none;
-    padding: 0 0 0 5rem;
     margin: 0 auto;
     color: white;
 }
