@@ -1,0 +1,430 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* FORMATO DE PLANES */
+/* TEXTOS DE GOOGLE FONTS */
+/* font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Open Sans', sans-serif; */
+main {
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    width: 100%;
+    text-align: center;
+    margin: 1rem 0;
+    font-size: 3rem;
+    color: #07004F;
+    transition: 1s;
+}
+
+
+
+.plan-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    max-width: 1170px;
+    height: fit-content;
+    margin: 2rem auto;
+    overflow: hidden;
+    border-radius: 50px;
+}
+.container-imagen { height: 100%;}
+aside {
+    width: 30%;
+}
+aside > img {
+    margin: 1rem auto;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 75, 0.5);;
+}
+.contacto {
+    text-align: center;
+    width: 100%;
+    font-size: 1rem;
+}
+
+.izquierdo {
+    float: left;
+}
+.derecho {
+    margin: .5rem 0;
+    float: right;
+}
+
+.imagen-camp {
+    width: 100%;
+}
+
+.plan-individual {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    transition: 1s;
+}
+
+.plan-individual:hover,
+.campanha:hover {
+    transform: scale(1.1);
+}
+
+.imagen-plan {
+    width: 100%;
+}
+
+.pyouth {
+    background-color: #100493;
+}
+
+.pfamily {
+    background-color: #0140B3;
+}
+
+.pmature {
+    background-color: #2D5EBA;
+}
+
+.pcuidado {
+    background-color: #4273CE;
+}
+
+.titulo-plan {
+    margin: .5rem;
+}
+
+.titulo-plan,
+.subtitulo-plan {
+    position: relative;
+    text-align: center;
+    color: whitesmoke;
+}
+.titulo-plan {
+    font-size: 1rem;
+}
+
+/* FORMATO DE CAMPAÑAS ASIDE */
+
+.novedades {
+    text-align: center;
+    color: #07004F;
+    animation: resaltado 2s linear 0s infinite normal;
+}
+
+.campanhas-container {
+    width: 20%;
+    float: right;
+    margin: 2rem auto;
+}
+
+.campanha {
+    margin: 0 0 2rem 0;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: whitesmoke;
+    text-align: center;
+    font-weight: bold;
+    color: #07004F;
+    transition: 1s;
+}
+
+.titulo-campanha {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.texto-campanha,
+.subtitulo-plan {
+    margin: auto;
+    width: 90%;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: .7rem;
+}
+
+
+
+.detalles-planes {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+}
+  
+.descripcion-plan {
+    margin: 0;
+}
+.container-caracteristicas {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+
+}
+.cuadritos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 2rem auto;
+    padding: .3rem 0;
+    width: 10rem;
+    height: 7rem;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 75, 0.5);
+}
+br {display: block; margin: 0;}
+
+.subtitulo-caracteristicas {
+    font-size: .8rem;
+}
+
+/* FOOTER REDES SOCIALES */
+footer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: auto;
+    padding: .5rem 0;
+    color: white;
+    background-color: #07004F;
+}
+
+.caja-logo-titulo-footer {
+    display: flex;
+    width: 25%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-footer {
+    height: 3rem;
+}
+
+.redes-sociales {
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    height: 100%;
+    font-size: .7rem;
+}
+
+.logo-redes {
+    font-size: 1.5rem;
+}
+
+.red-individual {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 40%;
+
+}
+
+.lista-redes,
+.texto-copy {
+    display: flex;
+    flex-direction: column;
+    margin: auto .6rem;
+    font-size: .7rem;
+    font-weight: bolder;
+}
+
+.copy {
+    display: inline-flex;
+    justify-content: center;
+    margin: .2rem;
+    width: 100%;
+    font-size: .8rem;
+}
+
+
+@keyframes resaltado {
+    0% {
+        color: #07004F;
+    }
+
+    33% {
+        color: #7092d3;
+    }
+
+    100% {
+        color: #07004F
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    .container-caracteristicas {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+    }
+    aside {
+        width: 40%;
+    }
+
+    
+    .container-caracteristicas {
+        width: 60%;
+    }
+    .cuadritos {
+        height: 5rem;
+        font-size: .7rem;
+        margin: .5rem auto;
+    }
+    .subtitulo-caracteristicas {
+        font-size: .6rem;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    main {
+        flex-direction: column;
+    }
+
+    
+    .cajaLogoYTitulo {
+        width: 35%;
+    }
+
+    .ulNav {
+        width: 65%;
+        flex-wrap: wrap;
+    }
+
+    .h1Inicio {
+        margin: auto;
+        font-size: 15px;
+
+    }
+
+    .ulNav {
+        font-size: 0.6rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+        margin: .3rem 0;
+    }
+    .plan-container {
+        width: 95%;
+        margin: 1rem auto;
+        border-radius: 25px;
+        }
+    .campanhas-container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 95%;
+        flex-direction: row;
+    }
+    .campanha {
+        width: 30%;
+    }
+    
+    .subtitulo-caracteristicas {
+        font-size: .5rem;
+    }
+    .caja-logo-titulo-footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+
+    }
+
+    .redes-sociales {
+        margin: .4rem;
+        width: 100%;
+
+    }
+
+    .titulo-plan {
+        font-size: .7rem;
+    }
+
+    .red-individual {
+        width: 50%;
+        align-items: center;
+    }
+
+    .lista-redes,
+    .texto-copy {
+        font-size: .7rem;
+        margin: 0;
+        align-items: center;
+    }
+
+    .texto-copy {
+        width: 70%;
+        text-align: center;
+    }
+
+    .copy {
+        margin: 1rem auto;
+        justify-content: space-around;
+        align-items: center;
+        width: 80%;
+        font-size: .8rem;
+    }
+
+    .novedades {
+        font-size: .8rem;
+        width: 100%;
+    }
+
+    .titulo-campanha {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        font-size: .7rem;
+    }
+
+    .texto-campanha,
+    .subtitulo-plan {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: .5rem;
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    .h1Inicio {
+        font-size: 10px;
+    }
+
+    .cajaLogoYTitulo {
+        width: 40%;
+    }
+
+    .ulNav {
+        width: 60%;
+        flex-wrap: wrap;
+    }
+    
+    .container-caracteristicas {
+        grid-template-columns: 1fr;
+    }
+    .cuadritos {
+        display: inline-block;
+        margin: .3rem auto;
+        width: 8rem;
+        height: 2.2rem;
+        font-size: .6rem;
+    }
+    .info {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
