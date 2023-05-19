@@ -1,0 +1,80 @@
+/* estilo titulo y del texto del formulario */
+
+#Form {
+  text-align: center;
+  /* Centra horizontalmente el texto */
+  display: flex;
+  /* Aplica un diseño flexible para centrar verticalmente el texto */
+  align-items: flex-end;
+  /* Alinea el texto en la parte inferior verticalmente */
+  color: #07004f;
+  font-size: 5em;
+  height: 400px;
+  margin-top: 20px;
+  text-align: center;
+  background-image: url(../assets/img/medium/call-center.webp);
+  background-size: cover;
+  background-position: center center;
+}
+
+.texto {
+  text-align: center;
+}
+
+/* Estilos del formulario de contacto */
+#Formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#Formulario div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+#Formulario label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+#Formulario input,
+#Formulario textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+#Formulario input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+/* Estilos para los mensajes de error */
+span[id$="-error"] {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+@media screen and (max-width: 768px) {
+
+  /* Ajuste del ancho máximo del formulario para celular */
+  #Formulario {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+}
