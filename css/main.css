@@ -1,70 +1,435 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 /* Contenedor */
-.container{
-    all: unset;
-    width: 100%;
-    height: 100vh;
+.container {
+  all: unset;
+  width: 100%;
+  height: 100vh;
 }
 /* Header */
 .header {
-    width: 100%;
-    height: 3rem;
-    color: white;
-    background-color: #07004F;
-    padding: 0.5rem 1rem;
+  width: 100%;
+  height: 3rem;
+  color: white;
+  background-color: #07004f;
+  padding: 0.5rem 1rem;
 }
 
-.nav{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
-    color: white;
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  color: white;
 }
 
-.cajaLogoYTitulo{
-    width: 30%;
+.cajaLogoYTitulo {
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logoNav {
+  width: 30px;
+}
+.h1Inicio {
+  font-size: 20px;
+  margin: auto;
+}
+
+.ulNav {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style-type: none;
+  margin: 0 auto;
+  color: white;
+}
+.ulNav li a {
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+.ulNav li a:hover {
+  padding: 0.5rem;
+  color: #07004f;
+  background-color: #b7d0ff;
+}
+
+.mainInicio {
+  width: 100%;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Sección inicial */
+.inicial {
+  width: 85%;
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.imgInicial {
+  width: 100%;
+  height: 350px;
+  border-radius: 50px 50px 0 0;
+}
+
+.h2Inicial {
+  color: white;
+  background-color: #07004f;
+  padding: 1rem 0;
+  margin: 0;
+}
+.opciones {
+  all: unset;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.liOpciones {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.liOpciones:nth-child(1) {
+  width: 100%;
+  height: 3rem;
+  background-color: #4c9ed9;
+}
+.liOpciones:nth-child(2) {
+  width: 100%;
+  height: 3rem;
+  background-color: #87d3ef;
+}
+.liOpciones:nth-child(3) {
+  width: 100%;
+  height: 3rem;
+  background-color: #4c9ed9;
+}
+
+.aOpciones {
+  color: white;
+  text-decoration: none;
+}
+
+/* Seccíon interes */
+.interes {
+  width: 85%;
+  margin: 2rem;
+  display: flex;
+}
+
+.boxH2 {
+  width: 20%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  background-color: #002856;
+  border-radius: 10px 0 0 10px;
+}
+
+.h2Interes {
+  text-align: center;
+  color: white;
+}
+
+.notas {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+}
+
+.boxNotas {
+  width: 33%;
+  height: 100%;
+  padding: 0 2rem;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+
+}
+.imgNotas {
+  width: 100%;
+  height: 120px;
+  border-radius: 10px;
+}
+.h3Notas {
+  font-size: 18px;
+  padding: 1rem 0;
+}
+.parNotas {
+  color: #717578;
+}
+
+/* Seccion 3 - adicional */
+.adicional{
+    width: 90%;
+    margin: 2rem;
     display: flex;
     justify-content: space-around;
-    align-items: center;
 }
-
-.logoNav{
-    width: 30px;
-}
-.h1Inicio{
-    font-size: 20px;
-    margin: auto;
-}
-
-.ulNav{
-    width: 70%;
+.boxAdicional{
+    position: relative;
+    width: 33%;
+    height: 350px;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    justify-content: space-evenly;
-    list-style-type: none;
-    margin: 0 auto;
+    padding: 3rem;
     color: white;
-}
-.ulNav li a{
-    text-decoration: none;
-    color: white;
+    border: 1px solid black;
     border-radius: 5px;
-    transition: .5s;
 }
-.ulNav li a:hover { 
-    padding: .5rem;
-    color: #07004F;
-    background-color: #B7D0FF;
+.imgAdicional{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    z-index: -1;
 }
 
-.mainInicio{
+
+/* FOOTER REDES SOCIALES */
+footer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 0.5rem 0;
+  color: white;
+  background-color: #07004f;
+}
+
+.caja-logo-titulo-footer {
+  display: flex;
+  width: 25%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-footer {
+  height: 3rem;
+}
+
+.redes-sociales {
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+  height: 100%;
+  font-size: 0.7rem;
+}
+
+.logo-redes {
+  font-size: 1.5rem;
+}
+
+.red-individual {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 40%;
+}
+
+.lista-redes,
+.texto-copy {
+  display: flex;
+  flex-direction: column;
+  margin: auto 0.6rem;
+  font-size: 0.7rem;
+  font-weight: bolder;
+}
+
+.copy {
+  display: inline-flex;
+  justify-content: center;
+  margin: 0.2rem;
+  width: 100%;
+  font-size: 0.8rem;
+}
+
+@keyframes resaltado {
+  0% {
+    color: #07004f;
+  }
+
+  33% {
+    color: #7092d3;
+  }
+
+  100% {
+    color: #07004f;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .container-caracteristicas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+  }
+  aside {
+    width: 40%;
+  }
+
+  .container-caracteristicas {
+    width: 60%;
+  }
+  .cuadritos {
+    height: 5rem;
+    font-size: 0.7rem;
+    margin: 0.5rem auto;
+  }
+  .subtitulo-caracteristicas {
+    font-size: 0.6rem;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  main {
+    flex-direction: column;
+  }
+
+  .cajaLogoYTitulo {
+    width: 35%;
+  }
+
+  .ulNav {
+    width: 65%;
+    flex-wrap: wrap;
+  }
+
+  .h1Inicio {
+    margin: auto;
+    font-size: 15px;
+  }
+
+  .ulNav {
+    font-size: 0.6rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+    margin: 0.3rem 0;
+  }
+  .plan-container {
+    width: 95%;
+    margin: 1rem auto;
+    border-radius: 25px;
+  }
+  .campanhas-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 95%;
+    flex-direction: row;
+  }
+  .campanha {
+    width: 30%;
+  }
+
+  .subtitulo-caracteristicas {
+    font-size: 0.5rem;
+  }
+  .caja-logo-titulo-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
-    min-height: 100vh;
+  }
+
+  .redes-sociales {
+    margin: 0.4rem;
+    width: 100%;
+  }
+
+  .titulo-plan {
+    font-size: 0.7rem;
+  }
+
+  .red-individual {
+    width: 50%;
+    align-items: center;
+  }
+
+  .lista-redes,
+  .texto-copy {
+    font-size: 0.7rem;
+    margin: 0;
+    align-items: center;
+  }
+
+  .texto-copy {
+    width: 70%;
+    text-align: center;
+  }
+
+  .copy {
+    margin: 1rem auto;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    font-size: 0.8rem;
+  }
+
+  .novedades {
+    font-size: 0.8rem;
+    width: 100%;
+  }
+
+  .titulo-campanha {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 0.7rem;
+  }
+
+  .texto-campanha,
+  .subtitulo-plan {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .h1Inicio {
+    font-size: 10px;
+  }
+
+  .cajaLogoYTitulo {
+    width: 40%;
+  }
+
+  .ulNav {
+    width: 60%;
+    flex-wrap: wrap;
+  }
+
+  .container-caracteristicas {
+    grid-template-columns: 1fr;
+  }
+  .cuadritos {
+    display: inline-block;
+    margin: 0.3rem auto;
+    width: 8rem;
+    height: 2.2rem;
+    font-size: 0.6rem;
+  }
+  .info {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
 }
