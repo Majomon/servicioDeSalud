@@ -78,6 +78,11 @@
   margin: 1rem 0;
   text-align: center;
 }
+.carousel {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
 
 .imgInicial {
   width: 100%;
@@ -159,12 +164,12 @@
   padding: 0 2rem;
   border-left: 2px solid black;
   border-right: 2px solid black;
-
 }
 .imgNotas {
   width: 100%;
   height: 120px;
   border-radius: 10px;
+  object-fit: cover;
 }
 .h3Notas {
   font-size: 18px;
@@ -174,34 +179,112 @@
   color: #717578;
 }
 
-/* Seccion 3 - adicional */
-.adicional{
-    width: 90%;
-    margin: 2rem;
-    display: flex;
-    justify-content: space-around;
-}
-.boxAdicional{
-    position: relative;
-    width: 33%;
-    height: 350px;
-    display: flex;
+@media screen and (max-width: 767px) {
+  .interes {
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 3rem;
-    color: white;
-    border: 1px solid black;
-    border-radius: 5px;
-}
-.imgAdicional{
-    position: absolute;
+  }
+  .boxH2 {
     width: 100%;
+    height: 100px;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .h2Interes {
+    margin: 0 auto;
+  }
+
+  .notas {
+    width: 100%;
+    flex-direction: column;
+  }
+  .boxNotas {
+    width: 100%;
+    height: 170px;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Divide el ancho en 3 columnas */
+    grid-template-rows: repeat(2, 1fr); /* Dos filas iguales */
+    border-bottom: 1px solid black;
+  }
+
+  .imgNotas {
     height: 100%;
-    border-radius: 5px;
-    z-index: -1;
+    padding: 0.5rem;
+    grid-column: 1; /* Ocupa la primera columna */
+    grid-row: 1 / span 2; /* Ocupa las dos filas */
+    border-radius: 10px;
+  }
+
+  .h3Notas {
+    grid-column: 2 / span 3; /* Ocupa la primera columna */
+    grid-row: 1;
+    text-align: center;
+    padding: 0;
+    margin-top: 0.5rem;
+  }
+  .parNotas {
+    grid-column: 2 / span 3; /* Ocupa la primera columna */
+    grid-row: 2;
+    margin: 0;
+    padding: 1rem;
+  }
+
+  .adicional {
+    flex-direction: column;
+    width: 100%;
+  }
+  .boxAdicional {
+    width: 100% !important;
+    margin: 0.5rem 0;
+  }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .interes{
+    height: 400px;
+  }
+  .boxH2{
+    height: 100%;
+  }
+
+  .boxNotas{
+    width: fit-content;
+  }
+
+.boxAdicional{
+  height: 500px !important;
+}
+}
+
+
+/* Seccion 3 - adicional */
+.adicional {
+  width: 90%;
+  margin: 2rem;
+  display: flex;
+  justify-content: space-around;
+}
+.boxAdicional {
+  position: relative;
+  width: 33%;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.imgAdicional {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  z-index: -1;
+}
 
 /* FOOTER REDES SOCIALES */
 footer {
