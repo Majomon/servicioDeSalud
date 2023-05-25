@@ -359,7 +359,8 @@ footer {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        width: 95%;
+        width: 80%;
+        padding: auto;
         flex-direction: row;
     }
     .campanha {
