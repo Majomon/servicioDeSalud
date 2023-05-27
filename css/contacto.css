@@ -8,6 +8,7 @@
   align-items: flex-end;
   /* Alinea el texto en la parte inferior verticalmente */
   color: #07004f;
+  text-shadow: 2px 2px white, -2px -2px white, -2px 2px white, 2px -2px white ;
   font-size: 5em;
   height: 400px;
   margin-top: 20px;
