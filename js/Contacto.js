@@ -39,17 +39,10 @@ function validarConsulta() {
     document.getElementById("consulta-error").innerHTML = "";
   }
 }
-/* abrir una ventana de alerta con los datos ingresados */
-/* const formulario = document.querySelector("#Formulario");
+/* FUNCION PARA RECIBIR LOS DATOS DE CONSULTA DEL PACIENTE QUE SE PONE EN CONTACTO */
 
-formulario.addEventListener("submit", function (event) {
-  event.preventDefault(); // Evita que el formulario se envíe
-
-  const opciones = document.getElementById("opciones").value;
-  const nombre = document.getElementById("nombre").value;
-  const telefono = document.getElementById("telefono").value;
-  const email = document.getElementById("email").value;
-  const consulta = document.getElementById("consulta").value;
+const form = document.querySelector('#Formulario')
+        form.addEventListener('submit', handleSubmit)
 
         async function handleSubmit(event) {
             event.preventDefault();
@@ -66,18 +59,4 @@ formulario.addEventListener("submit", function (event) {
                 alert('Gracias por contactarnos. Te escribiremos a la brevedad')
             }
 
-  window.alert(mensajeAdvertencia);
-});
- */
-// Obtener el formulario por su ID
-/* const formulario = document.getElementById("Formulario");
-
-// Agregar un evento 'submit' al formulario
-formulario.addEventListener("submit", function (event) {
-  // Evitar que el formulario se envíe automáticamente
-  event.preventDefault();
-
-  // Restablecer los valores de los campos del formulario
-  formulario.reset();
-});
- */
+        }
