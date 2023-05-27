@@ -45,6 +45,7 @@
 
 #Formulario input,
 #Formulario textarea {
+  margin: .5rem;
   width: 100%;
   padding: 10px;
   border-radius: 5px;
